@@ -11,7 +11,6 @@ import org.springframework.data.domain.Sort;
 @AllArgsConstructor
 @Data
 public class PageRequestDTO {
-
     private int page;
     private int size;
 

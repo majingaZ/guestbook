@@ -40,4 +40,9 @@ public class GuestbookServiceImpl implements GuestbookService {
         Function<Guestbook, GuestbookDTO> fn = (entity -> entityToDto(entity));
         return new PageResultDTO<>(result, fn);
     }
+
+    @Override
+    public Guestbook dtoToEntity(GuestbookDTO dto) {
+        return GuestbookService.super.dtoToEntity(dto);
+    }
 }
